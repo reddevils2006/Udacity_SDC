@@ -20,7 +20,7 @@ kernel size : 5
 
 #### Step 3. canny() : Apply Canny edge detection to the Blur Image
 
-low threshold : 0, high threshold : 150
+low threshold : 50, high threshold : 150
 
 <img src="./test_images_output/03solidWhiteCurve_Edge.jpg" width="480px">
 
@@ -55,14 +55,16 @@ Weight by line length to remove noises.
 
 ### 2. Identify potential shortcomings with your current pipeline
 
+(1) Since the masked area was optimized for this project, it is not effective on other roads.
 
-One potential shortcoming would be what would happen when ... 
+(2)　When the road lines are dots, it is impossible to obtain a correct slope.
 
-Another shortcoming could be ...
+(3) For example, if there is a shadow on the road or the colors of the road and the lines are similar, it is not possible to extract the edge.
 
 
 ### 3. Suggest possible improvements to your pipeline
 
-A possible improvement would be to ...
+(1) Flatten the histogram of the image to reduce the effect of brightness.
 
-Another potential improvement could be to ...
+(2) Exclude lines that are largely out of the previous judgment result.
+
