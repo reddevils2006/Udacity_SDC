@@ -1,7 +1,9 @@
 # **Finding Lane Lines on the Road** 
 
 ### Reflection
-<img src="/test_images_output/00solidWhiteCurve.jpg" width="320px">
+
+<img src="./test_images_output/00solidWhiteCurve.jpg" width="320px">
+
 ### 1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
 
 #### 1st Step. Convert the Image to grayscale 
