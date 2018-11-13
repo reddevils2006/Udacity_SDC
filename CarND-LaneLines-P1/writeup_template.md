@@ -1,7 +1,8 @@
 # **Finding Lane Lines on the Road** 
 
-### Reflection
+## Reflection
 
+Original Image
 <img src="./test_images_output/00solidWhiteCurve.jpg" width="480px">
 
 ### 1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
@@ -12,11 +13,17 @@
 
 #### 2nd Step. Apply Gaussian smoothing to the Grayscale Image
 
-kernel size : 5
-
+Kernel Size : 5
 <img src="./test_images_output/02solidWhiteCurve_Gray_blur.jpg" width="480px">
 
-#### 3rd Step. Apply Gaussian smoothing to the Grayscale Image
+#### 3rd Step. Apply Canny edge detection to the Blur Image
+
+Low threshold = 50, High threshold = 150
+<img src="./test_images_output/03solidWhiteCurve_Edge.jpg" width="480px">
+
+#### 4th Step. Mask the pixels out of the four sided polygon that I define on the Image
+
+<img src="./test_images_output/04solidWhiteCurve_Edge_vertices.jpg" width="480px"><img src="./test_images_output/05solidWhiteCurve_Masked_Edge.jpg" width="480px">
 
 ---
 
