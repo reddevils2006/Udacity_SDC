@@ -2,21 +2,19 @@
 
 ### Reflection
 
-<img src="./test_images_output/00solidWhiteCurve.jpg" width="320px">
+<img src="./test_images_output/00solidWhiteCurve.jpg" width="480px">
 
 ### 1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
 
 #### 1st Step. Convert the Image to grayscale 
 
-[image2]: ./test_images_output/01solidWhiteCurve_Gray.jpg "Grayscale Image"
-![alt text][image2]
+<img src="./test_images_output/01solidWhiteCurve_Gray.jpg" width="480px">
 
 #### 2nd Step. Apply Gaussian smoothing to the Grayscale Image
 
 kernel size : 5
 
-[image3]: ./test_images_output/02solidWhiteCurve_Gray_blur.jpg "Blur Image"
-![alt text][image3]
+<img src="./test_images_output/02solidWhiteCurve_Gray_blur.jpg" width="480px">
 
 #### 3rd Step. Apply Gaussian smoothing to the Grayscale Image
 
