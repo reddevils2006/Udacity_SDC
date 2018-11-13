@@ -1,21 +1,20 @@
 # **Finding Lane Lines on the Road** 
 
-## Writeup Template
+### Reflection
+[image1]: ./test_images_output/00solidWhiteCurve.jpg "Raw Image"
+### 1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
 
-### You can use this file as a template for your writeup if you want to submit it as a markdown file. But feel free to use some other method and submit a pdf if you prefer.
+#### 1st Step. Convert the Image to grayscale 
 
----
+[image2]: ./test_images_output/01solidWhiteCurve_Gray.jpg "Grayscale Image"
 
-**Finding Lane Lines on the Road**
+#### 2nd Step. Apply Gaussian smoothing to the Grayscale Image
 
-The goals / steps of this project are the following:
-* Make a pipeline that finds lane lines on the road
-* Reflect on your work in a written report
+kernel size : 5
 
+[image3]: ./test_images_output/02solidWhiteCurve_Gray_blur.jpg "Blur Image"
 
-[//]: # (Image References)
-
-[image1]: ./examples/grayscale.jpg "Grayscale"
+#### 3rd Step. Apply Gaussian smoothing to the Grayscale Image
 
 ---
 
@@ -23,12 +22,13 @@ The goals / steps of this project are the following:
 
 ### 1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
 
-My pipeline consisted of 5 steps. First, I converted the images to grayscale, then I .... 
+#### My pipeline consisted of 5 steps. First, I converted the images to grayscale, then I .... 
 
 In order to draw a single line on the left and right lanes, I modified the draw_lines() function by ...
 
 If you'd like to include images to show how the pipeline works, here is how to include an image: 
 
+[image1]: ./examples/grayscale.jpg "Grayscale"
 ![alt text][image1]
 
 
